@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - ghw-azure
+    paths:    
+      - .github/workflows/azure-static-web-apps-react-pipeline.yml
+      - 'app/client/**'
+
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
